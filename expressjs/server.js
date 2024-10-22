@@ -29,8 +29,8 @@ app.use('/index', (req, res) =>{
 app.use(express.json())
 
 
-app.use('/friends',friendsRouter);//routers allow us to use them only under a specific path
-app.use("/messages",messagesRouter);
+app.use('/friends', friendsRouter);//routers allow us to use them only under a specific path
+app.use("/messages", messagesRouter);
 //routers help modularization
 //why do we do this? this allows this portion of the app to be self contained
 app.listen(PORT, () => console.log("The server is listening..."));
